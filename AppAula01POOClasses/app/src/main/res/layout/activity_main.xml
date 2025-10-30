@@ -8,16 +8,41 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="Curso Desenvolvimento Android\nJava e Kotlin\nProgramação Orientada a Objetos\nAula 01 Java - Classe Pessoa"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFabricarPessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Fabricar uma Pessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtPessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Nenhuma Pessoa Criada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFabricarPessoa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
